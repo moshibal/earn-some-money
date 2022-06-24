@@ -7,7 +7,6 @@ const Card = ({ image, title, subTitle }) => {
       <Image
         source={image}
         style={{ width: "100%", height: 200, borderTopLeftRadius: 20 }}
-        resizeMode="contain"
       />
       <View>
         <Text style={styles.title}>{title}</Text>
@@ -22,13 +21,17 @@ export default Card;
 const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#f8f4f4",
+    borderRadius: 15,
 
-    paddingTop: 30,
+    padding: 15,
     marginTop: 30,
   },
   title: {
-    textAlign: "center",
     textTransform: "uppercase",
-    fontVariant: "red",
+    fontSize: 20,
+  },
+  subTitle: {
+    color: "#4ecdc4",
+    fontSize: 15,
   },
 });

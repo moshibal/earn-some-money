@@ -5,6 +5,7 @@ import CustomButtom from "../utilities/Buttom";
 const WelcomeScreen = () => {
   return (
     <ImageBackground
+      blurRadius={4}
       source={require(".././assets/background.jpg")}
       style={styles.background}
     >
@@ -13,7 +14,7 @@ const WelcomeScreen = () => {
           source={require("../assets/logo-red.png")}
           style={{ height: 100, width: 100 }}
         />
-        <Text>Sell the Items, You need no more..</Text>
+        <Text style={styles.tagline}>Sell the Items, You need no more..</Text>
       </View>
 
       <CustomButtom text="LOGIN" color="#fc5c65" />
@@ -29,13 +30,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
+    paddingHorizontal: 15,
   },
   logoContainer: {
     position: "absolute",
     top: 60,
     alignItems: "center",
   },
-  login: {
-    marginBottom: 10,
+  tagline: {
+    fontSize: 25,
+    fontWeight: "600",
   },
 });

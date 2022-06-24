@@ -33,15 +33,11 @@ const styles = StyleSheet.create({
   },
   imageContainer: { height: "100%", width: "100%" },
   add: {
-    width: 70,
-    height: 70,
     left: 30,
     top: 40,
     position: "absolute",
   },
   close: {
-    width: 70,
-    height: 70,
     right: 30,
     top: 40,
     position: "absolute",
